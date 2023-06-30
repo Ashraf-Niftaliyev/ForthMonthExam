@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:background="@color/lightGrey">
+
+  <TextView
+      android:id="@+id/HiText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="40dp"
+      android:textColor="@color/black"
+      android:textStyle="bold"
+      android:textSize="22sp"
+      android:text="Hi, Jenny Wilson"/>
+    
+    <TextView android:id="@+id/HereText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/HiText"
+        app:layout_constraintTop_toBottomOf="@id/HiText"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/grey"
+        android:textSize="17sp"
+        android:text="Here is your activity today,"/>
+
+    <ImageView
+        android:id="@+id/notification"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toEndOf="@id/HiText"
+        app:layout_constraintTop_toTopOf="@id/HiText"
+        android:src="@drawable/notifications"
+        android:layout_marginStart="150dp"/>
+  
+    <androidx.cardview.widget.CardView
+        android:id="@+id/firstCard"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/HereText"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        app:cardCornerRadius="10dp">
+      
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+      
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="25sp"
+          android:textColor="@color/red"
+          android:text="89%"
+          android:textStyle="bold"
+          android:layout_marginStart="20dp"
+          android:layout_marginTop="10dp"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_marginStart="20dp"
+          android:textColor="@color/grey"
+          android:text="Presence"
+          android:textSize="18sp"
+          android:textStyle="bold"/>
+      
+    </LinearLayout>
+      
+    </androidx.cardview.widget.CardView>
+
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/secondCard"
+      android:layout_width="160dp"
+      android:layout_height="90dp"
+      app:layout_constraintStart_toEndOf="@id/firstCard"
+      app:layout_constraintTop_toBottomOf="@id/HereText"
+      android:layout_marginStart="30dp"
+      android:layout_marginTop="40dp"
+      android:background="@color/white"
+      app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="25sp"
+          android:textColor="@color/darkBlue"
+          android:text="100%"
+          android:textStyle="bold"
+          android:layout_marginStart="20dp"
+          android:layout_marginTop="10dp"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_marginStart="20dp"
+          android:textColor="@color/grey"
+          android:text="Completeness"
+          android:textSize="18sp"
+          android:textStyle="bold"/>
+
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/thirdCard"
+      android:layout_width="160dp"
+      android:layout_height="90dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/firstCard"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="20dp"
+      android:background="@color/white"
+      app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="25sp"
+          android:textColor="@color/blue"
+          android:text="18"
+          android:textStyle="bold"
+          android:layout_marginStart="20dp"
+          android:layout_marginTop="10dp"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_marginStart="20dp"
+          android:textColor="@color/grey"
+          android:text="Assigments"
+          android:textSize="18sp"
+          android:textStyle="bold"/>
+
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/forthCard"
+      android:layout_width="160dp"
+      android:layout_height="90dp"
+      app:layout_constraintStart_toEndOf="@id/thirdCard"
+      app:layout_constraintTop_toBottomOf="@id/secondCard"
+      android:layout_marginStart="30dp"
+      android:layout_marginTop="20dp"
+      android:background="@color/white"
+      app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="25sp"
+          android:textColor="@color/orange"
+          android:text="12"
+          android:textStyle="bold"
+          android:layout_marginStart="20dp"
+          android:layout_marginTop="10dp"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_marginStart="20dp"
+          android:textColor="@color/grey"
+          android:text="Total Subject"
+          android:textSize="18sp"
+          android:textStyle="bold"/>
+
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/firstMini"
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/thirdCard"
+      android:layout_marginStart="30dp"
+      android:layout_marginTop="40dp"
+      android:backgroundTint="@color/blue"
+      app:cardCornerRadius="18dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <ImageView
+          android:layout_width="30dp"
+          android:layout_height="19dp"
+          android:src="@drawable/course"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/secondMini"
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+      app:layout_constraintStart_toEndOf="@id/firstMini"
+      app:layout_constraintTop_toBottomOf="@id/thirdCard"
+      android:layout_marginStart="30dp"
+      android:layout_marginTop="40dp"
+      android:backgroundTint="@color/darkBlue"
+      app:cardCornerRadius="18dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <ImageView
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:src="@drawable/subjects"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/thirdMini"
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+      app:layout_constraintStart_toEndOf="@id/secondMini"
+      app:layout_constraintTop_toBottomOf="@id/thirdCard"
+      android:layout_marginStart="30dp"
+      android:layout_marginTop="40dp"
+      android:backgroundTint="@color/orange"
+      app:cardCornerRadius="18dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <ImageView
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:src="@drawable/clas"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/forthMini"
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+      app:layout_constraintStart_toEndOf="@id/thirdMini"
+      app:layout_constraintTop_toBottomOf="@id/thirdCard"
+      android:layout_marginStart="30dp"
+      android:layout_marginTop="40dp"
+      android:backgroundTint="@color/lightGreen"
+      app:cardCornerRadius="18dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <ImageView
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:src="@drawable/presence"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.cardview.widget.CardView>
+
+  <TextView android:id="@+id/courseText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/grey"
+      android:textSize="18sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/firstMini"
+      android:layout_marginStart="30dp"
+      android:text="Course"
+      android:textStyle="bold"
+      android:layout_marginTop="8dp"/>
+
+  <TextView android:id="@+id/subjectsText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/grey"
+      android:textSize="18sp"
+      app:layout_constraintStart_toEndOf="@id/courseText"
+      app:layout_constraintTop_toBottomOf="@id/firstMini"
+      android:layout_marginStart="28dp"
+      android:text="Subjects"
+      android:textStyle="bold"
+      android:layout_marginTop="8dp"/>
+
+  <TextView android:id="@+id/classText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/grey"
+      android:textSize="18sp"
+      app:layout_constraintStart_toEndOf="@id/subjectsText"
+      app:layout_constraintTop_toBottomOf="@id/firstMini"
+      android:layout_marginStart="28dp"
+      android:text="Class"
+      android:textStyle="bold"
+      android:layout_marginTop="8dp"/>
+
+  <TextView android:id="@+id/presenceText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/grey"
+      android:textSize="18sp"
+      app:layout_constraintStart_toEndOf="@id/classText"
+      app:layout_constraintTop_toBottomOf="@id/firstMini"
+      android:layout_marginStart="28dp"
+      android:text="Presence"
+      android:textStyle="bold"
+      android:layout_marginTop="8dp"/>
+
+  
+  <TextView android:id="@+id/schedule"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/courseText"
+      android:layout_marginStart="30dp"
+      android:layout_marginTop="15dp"
+      android:textColor="@color/black"
+      android:textStyle="bold"
+      android:textSize="22sp"
+      android:text="Schedule"/>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recyclerView"
+      android:layout_width="0dp"
+      android:layout_height="160dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/schedule"
+      android:layout_marginTop="10dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

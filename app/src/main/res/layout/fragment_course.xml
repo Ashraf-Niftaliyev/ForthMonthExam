@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CourseFragment">
+
+  <ImageView
+      android:id="@+id/back"
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="40dp"
+      android:src="@drawable/back"/>
+
+    <TextView
+        android:id="@+id/textCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="43dp"
+        android:text="Course"
+        android:textStyle="bold"
+        android:textSize="22sp"/>
+
+    <ImageView
+        android:id="@+id/goToText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textCourse"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/card"/>
+
+    <TextView
+        android:id="@+id/textCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/goToText"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="35dp"
+        android:text="Categories"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <TextView android:id="@+id/textViewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/goToText"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="35dp"
+        android:textColor="@color/grey"
+        android:textSize="18sp"
+        android:text="View all"/>
+
+    <Button
+        android:id="@+id/All"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textCategories"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="35dp"
+        android:backgroundTint="@color/blue"
+        android:text="All"/>
+
+    <Button android:id="@+id/Mathematics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/All"
+        app:layout_constraintTop_toBottomOf="@id/textCategories"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/white"
+        android:text="Mathematics"
+        android:textColor="@color/black"/>
+
+    <Button android:id="@+id/Biology"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/Mathematics"
+        app:layout_constraintTop_toBottomOf="@id/textCategories"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="@color/white"
+        android:text="Biology"
+        android:textColor="@color/black"/>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/courseRecyclerView"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/All"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="20dp"
+      />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
